@@ -35,4 +35,13 @@ db.once('open', function() {
     if (err) return console.error(err);
     console.log(cat);
   });
+
+  // Kitten.create({ children: [{ name: 'my create' }] }, (error, doc) => {
+  //   if (error) return console.error(error);
+  //   console.log(doc);
+  // })
+
+  const cat = Kitten.create({ name: 'big cat' });
+  console.log(cat instanceof Kitten, 'true or false'); // true
+  console.log(cat.name, 'nameeeee'); // 'bill@microsoft.com'
 });
