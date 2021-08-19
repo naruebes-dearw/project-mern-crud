@@ -36,5 +36,3 @@ db.once('open', function() {
     console.log(cat);
   });
 });
-
-console.log('my mongoose change')
